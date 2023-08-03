@@ -11,7 +11,7 @@ const props = defineProps({
     }
 })
 
-defineEmits(['incrementar'])
+defineEmits(['agregar-carrito'])
 
 </script>
 
@@ -28,7 +28,7 @@ defineEmits(['incrementar'])
 
             <p>{{ guitarra.descripcion }}</p>
             <p class="fw-black text-primary fs-3">{{ guitarra.precio }}</p>
-            <button type="button" class="btn btn-dark w-100 " @click="$emit('incrementar')">Agregar al Carrito</button>
+            <button type="button" class="btn btn-dark w-100 " @click="$emit('agregar-carrito')">Agregar al Carrito</button>
 
         </div>
     </div><!-- FIN GUITARRA -->

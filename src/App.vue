@@ -10,7 +10,7 @@ onMounted(() => {
   guitarras.value = db;
 })
 
-const incrementar = () => {
+const agregarCarrito = () => {
   alert("Diste click")
 }
 
@@ -96,7 +96,7 @@ const incrementar = () => {
 
     <div class="row mt-5">
 
-      <Guitarra v-for="guitarra in guitarras" v-bind:guitarra="guitarra" @incrementar="incrementar" />
+      <Guitarra v-for="guitarra in guitarras" v-bind:guitarra="guitarra" @agregar-carrito="agregarCarrito" />
 
     </div>
   </main>
